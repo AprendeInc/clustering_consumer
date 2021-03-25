@@ -2,13 +2,17 @@
 
 La motivación de este proyecto se puede encontrar en la siguiente documentación de notion
 
+El objetivo de la segmentación es distinguir la categoría alta LTV (cantidad total pagada por estudiante) en función de las características sociodemográficas y transaccionales del mismo. Espeta perspectiva con centralidad en el cliente permite en principio entender la relevancia de las variables sociodemográficas en cada categoría transaccional del negocio tanto por los productos como por las facilidades de pago.
+
+
 Data crossing
 Las fuentes de datos principales para la info sociodemográfica y transaccional vienen de SalesForce y moodle bdd. Prácticamente se consumieron estas fuentes a partir de la info exhibida en Quicksight. La fuente de datos con la que se trabaja en adelante se puede ver enseguida: https://drive.google.com/file/d/1xNYFB1IzQdoP2CUbGzXX0BDfwVsWwK97/view?usp=sharing
 
 La variable género se construyó a partir del nombre del estudiante usando la siguiente función de python: https://aprende.atlassian.net/wiki/spaces/~982489695/pages/867172416/Gender+Determination+Improvement
 
 Data wrangling
-Para traducir a alto nivel la información por estudiante consideramos:
+Para traducir a alto nivel la información por estudiante consideramos las siguientes restricciones:
+
 0. Se acotó a los registros de estudiante generado en el año 2020. 
 1. El término de pago preponderante por estudiante.
 2. El primer diplomado asociado a cada estudiante.
